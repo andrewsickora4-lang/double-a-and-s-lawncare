@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Double A & S Lawn Care</title>
+  <style>
+    body {
+      margin:0;
+      font-family: Arial, sans-serif;
+      color: #e2e2e2;
+      background-color: #0b0b0b;
+    }
+    header {
+      background-color: #022d00;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin:0;
+      font-size: 3em;
+      color: #a5ff8c;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #cfeecf;
+    }
+    .container {
+      max-width:1000px;
+      margin:0 auto;
+      padding:20px;
+    }
+    .services, .about, .contact {
+      padding:40px 0;
+    }
+    .services h2, .about h2, .contact h2 {
+      color: #a5ff8c;
+      font-size:2em;
+      margin-bottom:20px;
+    }
+    .services ul {
+      list-style:none;
+      padding:0;
+    }
+    .services li {
+      margin-bottom:10px;
+      font-size:1.1em;
+    }
+    .hero {
+      position: relative;
+      width:100%;
+      height:400px;
+      overflow:hidden;
+      margin-bottom:40px;
+    }
+    .hero img {
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      filter: brightness(0.75);
+    }
+    .hero .hero-text {
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%, -50%);
+      color: #ffffff;
+      text-align:center;
+    }
+    .hero .hero-text h2 {
+      font-size:3em;
+      margin:0;
+    }
+    .contact form {
+      display:flex;
+      flex-direction:column;
+    }
+    .contact label {
+      margin-bottom:5px;
+      font-size:1em;
+    }
+    .contact input, .contact textarea {
+      padding:10px;
+      margin-bottom:20px;
+      border: none;
+      border-radius:4px;
+      font-size:1em;
+    }
+    .contact input[type="submit"] {
+      background-color: #a5ff8c;
+      color: #0b0b0b;
+      font-size:1.1em;
+      padding:15px;
+      cursor:pointer;
+      border:none;
+      border-radius:4px;
+      transition: background-color 0.3s;
+    }
+    .contact input[type="submit"]:hover {
+      background-color: #8ce06c;
+    }
+    footer {
+      background-color: #022d00;
+      color: #cfeecf;
+      text-align:center;
+      padding:20px 0;
+      margin-top:40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Double A &amp; S Lawn Care</h1>
+  <p>Your yard, cut to perfection. Reliable. Affordable. Local.</p>
+</header>
+
+<section class="hero">
+  <img src="hero-image.jpg" alt="Beautiful house with freshly cut lawn">
+  <div class="hero-text">
+    <h2>Make Your Lawn Stand Out</h2>
+  </div>
+</section>
+
+<div class="container">
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Lawn mowing &amp; edging</li>
+      <li>Striping &amp; precision cuts</li>
+      <li>Clean-up &amp; debris removal</li>
+      <li>Regular maintenance plans</li>
+      <li>Seasonal services (mulching, trimming, etc.)</li>
+    </ul>
+  </section>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>
+      At Double A &amp; S Lawn Care, we believe your yard is a reflection of your home. Based in Land O’ Lakes, Florida, we serve homeowners who want a clean, sharp, professional look without the hassle. With modern equipment, attention to detail and friendly service, we make sure your lawn gets the care it deserves.
+    </p>
+  </section>
+
+  <section class="contact">
+    <h2>Get a Free Quote</h2>
+    <form action="submit_form.php" method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required>
+      <label for="phone">Phone</label>
+      <input type="text" id="phone" name="phone" placeholder="Your phone number">
+      <label for="message">Tell us about your lawn</label>
+      <textarea id="message" name="message" placeholder="Yard size, special needs" rows="4"></textarea>
+      <input type="submit" value="Request Quote">
+    </form>
+  </section>
+
+</div>
+
+<footer>
+  <p>&copy; 2025 Double A &amp; S Lawn Care. All Rights Reserved.</p>
+  <p>Land O’ Lakes, Florida • Phone: (XXX) XXX-XXXX</p>
+</footer>
+
+</body>
+</html>
